@@ -2,5 +2,8 @@
 <ul>
   <% @restaurants.each do |restaurant| %>
     <li>'<strong><%= restaurant.name %></strong>' located at <em><%= restaurant.address %></em></li>
+    <p>
+      <%= link_to "Show this restaurant", restaurant %>
+    </p>
   <% end %>
 </ul>
