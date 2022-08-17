@@ -7,3 +7,13 @@
       <%= link_to "Back to all restaurants", restaurants_path %>
     </p>
 </ul>
+
+<p><strong>Reviews</strong></p>
+<ul class="list-group">
+  <% @restaurant.reviews.each do |review| %>
+    <li class="list-group-item"><%= review.content %></li>
+    <li class="list-group-item"><%= review.rating %></li>
+
+  <% end %>
+</ul>
+<br>
